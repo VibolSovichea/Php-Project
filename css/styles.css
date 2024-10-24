@@ -1,0 +1,108 @@
+body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #f4f4f4;
+ }
+ 
+ h1, h2, h3 {
+     color: #333;
+ }
+ 
+ a {
+     color: #3498db;
+     text-decoration: none;
+ }
+ 
+ a:hover {
+     text-decoration: underline;
+ }
+ 
+ .container {
+     width: 80%;
+     margin: 0 auto;
+ }
+ 
+ header {
+     background: #3498db;
+     color: #fff;
+     padding: 10px 0;
+     text-align: center;
+ }
+ 
+ form {
+     background: #fff;
+     padding: 20px;
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     margin-bottom: 20px;
+ }
+ 
+ form input[type="text"],
+ form input[type="number"],
+ form input[type="file"] {
+     width: 100%;
+     padding: 10px;
+     margin: 10px 0;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+ }
+ 
+ form button {
+     background: #3498db;
+     color: #fff;
+     border: none;
+     padding: 10px;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+ 
+ form button:hover {
+     background: #2980b9;
+ }
+ 
+ .property {
+     background: #fff;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     padding: 15px;
+     margin-bottom: 20px;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .property img {
+     max-width: 100%;
+     height: auto;
+     border-radius: 5px;
+ }
+ 
+ table {
+     width: 100%;
+     border-collapse: collapse;
+     margin: 20px 0;
+ }
+ 
+ table, th, td {
+     border: 1px solid #ddd;
+ }
+ 
+ th, td {
+     padding: 12px;
+     text-align: left;
+ }
+ 
+ th {
+     background-color: #f4f4f4;
+ }
+ 
+ footer {
+     text-align: center;
+     padding: 20px;
+     background: #3498db;
+     color: #fff;
+     position: relative;
+     bottom: 0;
+     width: 100%;
+ }
+ 
