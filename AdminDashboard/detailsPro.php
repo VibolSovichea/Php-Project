@@ -9,7 +9,6 @@ $Mydetails = details();
 
 <?php
     include('./Layout/head.php');
-  
   ?>
 
   </html>

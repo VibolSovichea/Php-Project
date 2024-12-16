@@ -7,8 +7,6 @@
     include './dbconnection/connect.php';
 
       $id = $_POST['id'] ?? '';
-
-
         if($id){
               $stm = $pdo->prepare("SELECT * FROM product WHERE id = :id");
               $stm->execute([
@@ -29,12 +27,5 @@
     header("Location: /PHPprojectNum1/AdminDashboard/Edit.php?message=Product created successfully");
     exit();
   }
-
-   
-
-
-
-
-
 
 ?>

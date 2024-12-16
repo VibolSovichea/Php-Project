@@ -20,11 +20,7 @@
                 header("Location: /PHPprojectNum1/AdminDashboard/ProductList.php");
                 exit();
             }    
-
   }
-  
-
      $result = deleted();
-
        echo $result;
 ?>
