@@ -1,6 +1,5 @@
 
 <?php
-
   function deleted(){
      include './db.con.php';
        if($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -17,7 +16,7 @@
                 $sql->execute([
                     ':id' => $id,
                 ]);
-                header("Location: /PHPprojectNum1/AdminDashboard/ProductList.php");
+                header("Location: /PHPprojectNum1/AdminDashboard/ProductList.php?message= DeleteSuccessfully ");
                 exit();
             }    
   }

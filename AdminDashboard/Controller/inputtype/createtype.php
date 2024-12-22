@@ -11,7 +11,6 @@ function create(){
             exit;
         }
     
-      
         $stm = $pdo->prepare("
             INSERT INTO type (name, created_at, updated_at) 
             VALUES (:nametype, NOW(), NOW())

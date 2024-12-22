@@ -7,14 +7,10 @@ function delete() {
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $id = $_POST['id'] ?? '';
-
-    
         if (empty($id)) {
             header('Location: /PHPprojectNum1/AdminDashboard/editinputtype.php');
             exit();
         }
-
-        
         if($id){
             $stmt = $pdo->prepare("DELETE FROM product WHERE type_id = :type_id");
             $stmt->execute([':type_id' => $id]);
@@ -27,8 +23,6 @@ function delete() {
 
     }
 }
-
-
 
 delete();
 ?>

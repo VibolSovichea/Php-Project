@@ -1,7 +1,7 @@
 <?php
 
 function updateProduct() {
-    include('db.con.php');
+    include('./db.con.php');
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $id = $_POST['id'] ?? '';

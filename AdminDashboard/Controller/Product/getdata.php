@@ -3,10 +3,10 @@
 <?php
 
 function getPro() {
-     include './dbconnection/connect.php';
-    $sql = "SELECT product.*, type.name AS type_name
-            FROM product
-            JOIN type ON product.type_id = type.id";
+     include './db/dsconnect.php';
+    $sql = "SELECT products.*, types.name AS type_name
+            FROM products
+            JOIN type ON products.type_id = types.id";
     
     $stm = $pdo->prepare($sql);
     $stm->execute();
